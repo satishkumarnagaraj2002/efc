@@ -11,10 +11,10 @@ export default function CoachesPage() {
         <SectionHeading
           eyebrow="Meet the coaches"
           title="The people behind the progress."
-          description="Coaching details will be added here when the club confirms staffing information and approved biographies."
+          description="Meet the coaches leading our U9 and U11 teams."
         />
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-3">
+        <div className="mt-16 grid gap-8 lg:grid-cols-2">
           {clubInfo.coaches.map((coach) => (
             <article key={coach.name} className="overflow-hidden rounded-[28px] border border-white/10 bg-white/5">
               <Image src={coach.image} alt={coach.name} width={900} height={1200} className="h-[420px] w-full object-cover" />

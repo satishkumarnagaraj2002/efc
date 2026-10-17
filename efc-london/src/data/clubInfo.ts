@@ -25,6 +25,7 @@ export type Team = {
   ageGroup: string;
   image: string;
   coach?: string;
+  coachImage?: string;
   trainingSchedule?: string;
   description: string;
   location?: string;
@@ -75,7 +76,7 @@ export const clubInfo = {
     "FA England Accredited club",
     "NLYFL",
     "Walthamstow",
-    "Age groups U4 to U16",
+    "Age groups U9 & U11",
     "Training programme for youth football development",
   ],
   contact: {
@@ -92,7 +93,7 @@ export const clubInfo = {
   },
   stats: [
     { label: "Founded", value: "2017" },
-    { label: "Age Groups", value: "U4–U16" },
+    { label: "Age Groups", value: "U9 & U11" },
     { label: "Accreditation", value: "FA England" },
     { label: "Training Base", value: "Walthamstow" },
   ] as ClubStats[],
@@ -125,7 +126,7 @@ export const clubInfo = {
         "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1000&q=80",
       description:
         "Structured football sessions designed to build confidence, technique, and a love of the game in a positive learning environment.",
-      ageRange: "U4–U16",
+      ageRange: "U9 & U11",
       schedule: "TBC",
       location: "Walthamstow",
       category: "Training",
@@ -136,7 +137,7 @@ export const clubInfo = {
         "https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1000&q=80",
       description:
         "Focused development sessions covering movement, ball mastery, passing, receiving, and decision-making.",
-      ageRange: "U7–U16",
+      ageRange: "U9 & U11",
       schedule: "TBC",
       location: "Walthamstow",
       category: "Development",
@@ -147,7 +148,7 @@ export const clubInfo = {
         "https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?auto=format&fit=crop&w=1000&q=80",
       description:
         "Team-based training that supports tactical understanding, communication, and competitive confidence.",
-      ageRange: "U9–U16",
+      ageRange: "U9 & U11",
       schedule: "TBC",
       location: "Walthamstow",
       category: "Teams",
@@ -157,43 +158,36 @@ export const clubInfo = {
     {
       name: "Elite FC London U9",
       ageGroup: "U9",
-      image:
-        "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1000&q=80",
-      coach: "TBC",
-      trainingSchedule: "TBC",
+      image: "/u9.jpeg",
+      coach: "Tom",
+      coachImage: "/Tom.jpeg",
+      trainingSchedule: "Fridays 19.00 to 20.30",
       description: "A development-focused age group built around technical growth, confidence, and team play.",
-      location: "Walthamstow",
-    },
-    {
-      name: "Elite FC London U10",
-      ageGroup: "U10",
-      image:
-        "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=1000&q=80",
-      coach: "TBC",
-      trainingSchedule: "TBC",
-      description: "Young players continue to develop game understanding, fitness, and strong football habits.",
-      location: "Walthamstow",
+      location: "Peter May Sports Centre, 135 Wadham Rd, London E17 4HR",
     },
     {
       name: "Elite FC London U11",
       ageGroup: "U11",
-      image:
-        "https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1000&q=80",
-      coach: "TBC",
-      trainingSchedule: "TBC",
+      image: "/u11.jpeg",
+      coach: "Jason",
+      coachImage: "/Jason.jpeg",
+      trainingSchedule: "Fridays 19.00 to 20.30",
       description: "A key stage for advanced decision-making, play patterns, and match competitiveness.",
-      location: "Walthamstow",
+      location: "Peter May Sports Centre, 135 Wadham Rd, London E17 4HR",
     },
   ] as Team[],
   coaches: [
     {
-      name: "Coach team to be confirmed",
-      role: "Coaching staff",
-      image:
-        "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=900&q=80",
-      qualifications: "Pending verification",
-      experience: "Pending verification",
-      bio: "The official coaching team will be confirmed and updated here as details are authorised by the club.",
+      name: "Tom",
+      role: "U9 Coach",
+      image: "/Tom.jpeg",
+      bio: "Coach for the U9 team at Elite Football Club London.",
+    },
+    {
+      name: "Jason",
+      role: "U11 Coach",
+      image: "/Jason.jpeg",
+      bio: "Coach for the U11 team at Elite Football Club London.",
     },
   ],
   achievements: [

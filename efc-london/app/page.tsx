@@ -48,7 +48,7 @@ export default function HomePage() {
             </div>
             <div className="mt-8 flex flex-wrap gap-6 text-sm text-slate-300">
               <span className="flex items-center gap-2"><Award size={16} className="text-[#B8FF3B]" /> FA England accredited club</span>
-              <span className="flex items-center gap-2"><Users size={16} className="text-[#B8FF3B]" /> Age groups U4 to U16</span>
+              <span className="flex items-center gap-2"><Users size={16} className="text-[#B8FF3B]" /> Age groups U9 &amp; U11</span>
             </div>
           </div>
 
