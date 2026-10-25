@@ -62,7 +62,7 @@ export const clubInfo = {
   shortName: "Elite FC London",
   tagline: "Passion. Discipline. Excellence.",
   mission: "To build confident, technically capable, and well-rounded footballers through disciplined coaching, positive team culture, and meaningful development.",
-  location: "Walthamstow",
+  location: "Walthamstow, East London",
   established: "2017",
   brandColors: {
     primaryBackground: "#070B12",
@@ -73,17 +73,18 @@ export const clubInfo = {
     darkSurface: "#151E2D",
   },
   verifiedHighlights: [
-    "FA England Accredited club",
+    "England Football accredited club",
     "NLYFL",
-    "Walthamstow",
-    "Age groups U9 & U11",
-    "Training programme for youth football development",
+    "Peter May Sports Centre, E17",
+    "Ages 4–15",
+    "Fridays 19:00 – 20:30",
+    "First session free",
   ],
   contact: {
-    phone: "+44 7424 053644",
+    phone: "07424 053 644",
     email: "elitefclondon@gmail.com",
     website: "http://www.elitefclondon.uk/",
-    address: "Walthamstow, London",
+    address: "Peter May Sports Centre, 135 Wadham Rd, London E17 4HR",
   },
   socialLinks: {
     instagram: "https://www.instagram.com/elitefootballclublondon/",
@@ -93,9 +94,10 @@ export const clubInfo = {
   },
   stats: [
     { label: "Founded", value: "2017" },
-    { label: "Age Groups", value: "U9 & U11" },
-    { label: "Accreditation", value: "FA England" },
-    { label: "Training Base", value: "Walthamstow" },
+    { label: "Ages", value: "4–15" },
+    { label: "Accreditation", value: "England Football" },
+    { label: "Training", value: "Fridays 19:00–20:30" },
+    { label: "First session", value: "FREE" },
   ] as ClubStats[],
   values: [
     {
@@ -127,8 +129,8 @@ export const clubInfo = {
       description:
         "Structured football sessions designed to build confidence, technique, and a love of the game in a positive learning environment.",
       ageRange: "U9 & U11",
-      schedule: "TBC",
-      location: "Walthamstow",
+      schedule: "Fridays 19:00 – 20:30",
+      location: "Peter May Sports Centre, E17",
       category: "Training",
     },
     {
@@ -138,8 +140,8 @@ export const clubInfo = {
       description:
         "Focused development sessions covering movement, ball mastery, passing, receiving, and decision-making.",
       ageRange: "U9 & U11",
-      schedule: "TBC",
-      location: "Walthamstow",
+      schedule: "Fridays 19:00 – 20:30",
+      location: "Peter May Sports Centre, E17",
       category: "Development",
     },
     {
@@ -149,8 +151,8 @@ export const clubInfo = {
       description:
         "Team-based training that supports tactical understanding, communication, and competitive confidence.",
       ageRange: "U9 & U11",
-      schedule: "TBC",
-      location: "Walthamstow",
+      schedule: "Fridays 19:00 – 20:30",
+      location: "Peter May Sports Centre, E17",
       category: "Teams",
     },
   ] as Programme[],
@@ -159,7 +161,7 @@ export const clubInfo = {
       name: "Elite FC London U9",
       ageGroup: "U9",
       image: "/u9.jpeg",
-      coach: "Tom",
+      coach: "Coach Tom",
       coachImage: "/Tom.jpeg",
       trainingSchedule: "Fridays 19.00 to 20.30",
       description: "A development-focused age group built around technical growth, confidence, and team play.",
@@ -169,7 +171,7 @@ export const clubInfo = {
       name: "Elite FC London U11",
       ageGroup: "U11",
       image: "/u11.jpeg",
-      coach: "Jason",
+      coach: "Coach Jason",
       coachImage: "/Jason.jpeg",
       trainingSchedule: "Fridays 19.00 to 20.30",
       description: "A key stage for advanced decision-making, play patterns, and match competitiveness.",
@@ -178,16 +180,16 @@ export const clubInfo = {
   ] as Team[],
   coaches: <Coach[]>[
     {
-      name: "Tom",
-      role: "U9 Coach",
+      name: "Coach Tom",
+      role: "U9 Head Coach",
       image: "/Tom.jpeg",
-      bio: "Coach for the U9 team at Elite Football Club London.",
+      bio: "Coach Tom leads our U9 Orange squad, building ball mastery, confidence and a love of the game every Friday evening at Peter May Sports Centre.",
     },
     {
-      name: "Jason",
-      role: "U11 Coach",
+      name: "Coach Jason",
+      role: "U11 Head Coach",
       image: "/Jason.jpeg",
-      bio: "Coach for the U11 team at Elite Football Club London.",
+      bio: "Coach Jason leads our U11 Orange squad, sharpening decision-making, teamwork and match competitiveness in the NLYFL.",
     },
   ],
   achievements: [
@@ -268,10 +270,163 @@ export const clubInfo = {
   ],
 };
 
+export const venue = {
+  name: "Peter May Sports Centre",
+  address: "135 Wadham Rd, London E17 4HR",
+  pitch: "3G pitch",
+  day: "Friday",
+  time: "19:00 – 20:30",
+  mapUrl:
+    "https://www.google.com/maps/search/?api=1&query=Peter+May+Sports+Centre+135+Wadham+Rd+London+E17+4HR",
+};
+
+export const timetable = [
+  {
+    group: "U9 Orange",
+    league: "NLYFL",
+    coach: "Coach Tom",
+    image: "/Tom.jpeg",
+    day: "Friday",
+    time: "19:00 – 20:30",
+    venue: "Peter May Sports Centre",
+  },
+  {
+    group: "U11 Orange",
+    league: "NLYFL",
+    coach: "Coach Jason",
+    image: "/Jason.jpeg",
+    day: "Friday",
+    time: "19:00 – 20:30",
+    venue: "Peter May Sports Centre",
+  },
+];
+
+export const developmentGroups = [
+  { ages: "4–7", label: "Foundation", text: "Fun, movement and first touches in a calm, child-centred setting." },
+  { ages: "8–10", label: "Development", text: "Growing technique, game understanding and confidence on the ball." },
+  { ages: "11–15", label: "Performance", text: "Competitive football, tactical awareness and pathways to the next level." },
+];
+
+export const pathway = [
+  { step: "Semi-Pro & Pro Team Trials", text: "Opportunities to trial at the next level" },
+  { step: "Team", text: "League, friendly and tournament football" },
+  { step: "Development", text: "Developing skills and game understanding" },
+  { step: "Foundation", text: "Fun, safe and enjoyable first steps in football" },
+];
+
+export const playerStories = [
+  {
+    name: "David Cira",
+    club: "Watford FC",
+    text: "Started at Elite FC London aged 4 and signed with Watford FC at the age of 8 in 2024.",
+  },
+  {
+    name: "Alexandra Gutoiu",
+    club: "West Ham United Academy",
+    text: "Represented the Romania Women's U15 team in a 5–0 win over North Macedonia and is now in the West Ham Academy.",
+  },
+  {
+    name: "Academy pathways",
+    club: "Barnet FC & more",
+    text: "Our players have progressed to Watford FC, Barnet FC and West Ham United academies.",
+  },
+];
+
+export const milestones = [
+  "Played against the academies of Arsenal, Crystal Palace, Chelsea, West Ham, Stevenage and QPR",
+  "Played at Selhurst Park",
+  "Played at the Tottenham Hotspur Training Centre",
+];
+
+export const seasons = [
+  {
+    season: "2025/26",
+    items: [
+      "U10s Orange – NLYFL Winter Cup runners-up (final at Spurs' Training Centre)",
+      "U14s Red – 2nd in their league division",
+      "Record number of teams: HSC U7/U9/U10, HYFL U12/U14/U16, JPL U10/U12/U14/U16 and NLYFL U10",
+    ],
+  },
+  {
+    season: "2024/25",
+    items: [
+      "U10s – Barnet FC tournament champions",
+      "U11s – Inv3ntive FC tournament runners-up",
+      "U13s – Switch Sports tournament champions",
+    ],
+  },
+  {
+    season: "2023/24",
+    items: [
+      "U12s – Middlesex Youth Football League division champions",
+      "U9s – JPL Middlesex Winter Cup champions, JPL National Winter Cup runners-up and Barnet tournament champions",
+      "U10s – Barnet tournament champions and MYFL Cup runners-up",
+    ],
+  },
+  {
+    season: "2022/23",
+    items: [
+      "U8s – Linked Events Junior Tournament and ENG Cup champions",
+      "U7s – ENG Cup champions",
+      "First Team – league runners-up and Parker Cup champions",
+    ],
+  },
+];
+
+export const fourCorners = [
+  { title: "Technical", items: ["Ball mastery", "Practice", "Group play"] },
+  { title: "Psychological", items: ["Understanding", "Decision making", "Confidence"] },
+  { title: "Physical", items: ["Co-ordination", "Conditioning", "Challenge"] },
+  { title: "Social", items: ["Communication", "Self-esteem", "Teamwork"] },
+];
+
+export const included = [
+  "FA player and parent registration",
+  "Access to training facilities",
+  "Training equipment",
+  "Personal accident and public liability insurance",
+  "End-of-season presentation with a trophy for every player",
+  "Player of the Month awards",
+  "Friendly matches",
+  "Match kit(s) for league players",
+  "Hive / Barnet FC member discounts",
+];
+
+export const kit = [
+  "Rain jacket",
+  "Tracksuit",
+  "T-shirt",
+  "Shorts",
+  "Socks",
+  "Drawstring sack",
+];
+
+export const partners = {
+  hive: {
+    title: "Barnet FC · The Hive Affiliate Club",
+    text: "Affiliate membership brings discounted tickets, food, drink, merchandise and parking, plus prize draws, holiday camps and a free annual club day.",
+    url: "https://thehivefoundation.com/affiliate-club-membership/",
+  },
+  fundraising: {
+    title: "Easyfundraising",
+    text: "Raise free donations for the club whenever you shop online with over 7,000 retailers.",
+    url: "https://www.easyfundraising.org.uk/causes/elite-football-club-london/",
+  },
+  sponsor: {
+    title: "Main sponsor: Bute Construction",
+    text: "Sponsorship packages include your business name on the FA site, social media advertising and your logo on kit, banners and posters.",
+    url: "https://www.buteconstruction.co.uk/",
+  },
+};
+
+export const supportNote =
+  "No child is ever removed from the club because of financial difficulty. Please talk to us in advance and we will do our best to help. A sibling discount is also available.";
+
 export const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/training", label: "Training" },
+  { href: "/timetable", label: "Timetable" },
   { href: "/teams", label: "Teams" },
   { href: "/coaches", label: "Coaches" },
   { href: "/gallery", label: "Gallery" },
@@ -283,5 +438,5 @@ export const navItems = [
 export const pageMeta = {
   title: "Elite Football Club London | Football Training & Youth Development",
   description:
-    "Elite Football Club London offers youth football development, team training, and coaching in Walthamstow. View club programmes, teams, and contact details.",
+    "Elite Football Club London offers youth football for ages 4–15 in East London. Friday training at Peter May Sports Centre, E17 — your first session is free.",
 };

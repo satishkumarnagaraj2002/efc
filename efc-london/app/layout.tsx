@@ -18,11 +18,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.elitefclondon.uk"),
   title: "Elite Football Club London | Football Training & Youth Development",
   description:
-    "Elite Football Club London offers youth football development, football training, and team progression in Walthamstow.",
+    "Elite Football Club London offers youth football for ages 4–15 in East London. Friday training at Peter May Sports Centre, E17 — first session free.",
   openGraph: {
     title: "Elite Football Club London",
     description:
-      "Youth football development, coaching, and competitive opportunities in Walthamstow.",
+      "Youth football development, coaching, and competitive opportunities in East London. First session free.",
+    images: [{ url: "/logo-shield.png" }],
     url: "https://www.elitefclondon.uk",
     siteName: "Elite Football Club London",
     type: "website",

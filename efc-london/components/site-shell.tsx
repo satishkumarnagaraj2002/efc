@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import {
   ArrowUp,
   Facebook,
+  Gift,
   Instagram,
   Mail,
   MapPin,
@@ -15,6 +16,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import { Logo } from "@/components/logo";
 import { clubInfo, navItems } from "@/src/data/clubInfo";
 
 function ScrollProgress() {
@@ -58,12 +60,17 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-[#070B12] text-[#F8FAFC]">
       <ScrollProgress />
 
+      <div className="relative overflow-hidden border-b border-[#B8FF3B]/20 bg-[#B8FF3B] text-[#070B12]">
+        <div className="mx-auto flex max-w-7xl items-center justify-center gap-2 px-4 py-2 text-center text-xs font-extrabold uppercase tracking-[0.16em] sm:text-sm">
+          <Gift size={16} className="shrink-0" />
+          <span>Your first session is FREE — Fridays 19:00–20:30 · Peter May Sports Centre, E17</span>
+        </div>
+      </div>
+
       <header className="sticky top-0 z-40 border-b border-white/10 bg-[#070B12]/70 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-          <Link href="/" className="flex items-center gap-3" aria-label="Elite Football Club London home">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#B8FF3B]/60 bg-[#B8FF3B]/10 text-sm font-black text-[#B8FF3B]">
-              EFC
-            </div>
+          <Link href="/" className="group flex items-center gap-3" aria-label="Elite Football Club London home">
+            <Logo height={46} priority className="transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3" />
             <div>
               <div className="text-xs font-semibold uppercase tracking-[0.35em] text-[#94A3B8]">Elite</div>
               <div className="text-base font-black uppercase tracking-[0.18em]">London</div>
@@ -170,17 +177,18 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
 
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-4 lg:px-8">
           <div>
-            <div className="mb-5 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#B8FF3B]/60 bg-[#B8FF3B]/10 text-sm font-black text-[#B8FF3B]">
-                EFC
-              </div>
+            <div className="mb-5 flex items-center gap-4">
+              <Logo height={84} />
               <div>
-                <div className="text-[10px] font-semibold uppercase tracking-[0.35em] text-[#94A3B8]">Elite</div>
-                <div className="text-sm font-black uppercase tracking-[0.2em]">London</div>
+                <div className="text-[10px] font-semibold uppercase tracking-[0.35em] text-[#94A3B8]">Elite Football Club</div>
+                <div className="text-lg font-black uppercase tracking-[0.2em]">London</div>
               </div>
             </div>
             <p className="max-w-xs text-sm leading-7 text-slate-300">
-              Elite Football Club London is a youth football development club focused on discipline, teamwork, and progression.
+              Elite Football Club London is a youth football development club for ages 4–15 focused on discipline, teamwork, and progression.
+            </p>
+            <p className="mt-4 inline-flex items-center gap-2 rounded-full border border-[#B8FF3B]/40 bg-[#B8FF3B]/10 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-[#B8FF3B]">
+              <Gift size={14} /> First session free
             </p>
           </div>
 
