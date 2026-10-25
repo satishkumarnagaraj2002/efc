@@ -62,3 +62,5 @@ Update the following files when the club approves final content:
 - `app/news/page.tsx`
 - `app/join/page.tsx`
 - `app/contact/page.tsx`
+# elite-football-club
+# elite-football-club
