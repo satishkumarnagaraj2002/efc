@@ -1,0 +1,10 @@
+{
+  "name": "efc-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix efc-london run dev",
+    "build": "npm --prefix efc-london run build",
+    "start": "npm --prefix efc-london run start",
+    "lint": "npm --prefix efc-london run lint"
+  }
+}
