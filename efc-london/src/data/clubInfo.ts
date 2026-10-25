@@ -176,7 +176,7 @@ export const clubInfo = {
       location: "Peter May Sports Centre, 135 Wadham Rd, London E17 4HR",
     },
   ] as Team[],
-  coaches: [
+  coaches: <Coach[]>[
     {
       name: "Tom",
       role: "U9 Coach",
